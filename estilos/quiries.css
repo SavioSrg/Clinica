@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+header, header > nav {
+    flex-flow: row wrap;
+}
+
+span#burguer {
+    display: none;
+}
+
+header > h1{
+    flex-basis: 200px;
+}
+
+header > nav > a{
+    width: auto;
+}
