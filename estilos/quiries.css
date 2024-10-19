@@ -1,17 +1,60 @@
 @charset "UTF-8";
 
-header, header > nav {
-    flex-flow: row wrap;
+
+@media screen and (min-width: 643px) and (max-width: 1024px) {
+
+    header,
+    header>nav {
+        flex-flow: row wrap;
+    }
+
+    span#burguer {
+        display: none;
+    }
+
+    header>h1 {
+        flex-basis: 200px;
+    }
+
+    header>nav>a {
+        width: auto;
+    }
 }
 
-span#burguer {
-    display: none;
-}
+@media screen and (min-width: 1025px) {
+    header {
+        flex-flow: row wrap;
+    }
 
-header > h1{
-    flex-basis: 200px;
-}
+    header>nav {
+        flex-flow: row nowrap;
+        flex: auto;
+        justify-content: center;
+    }
 
-header > nav > a{
-    width: auto;
+    button#botao {
+        display: flex;
+        flex-flow: row wrap;
+
+
+        margin: 5px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(125, 226, 43);
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    span#burguer {
+        display: none;
+    }
+
+    header>h1 {
+        flex-basis: 200px;
+    }
+
+    header>nav>a {
+        width: auto;
+    }
 }

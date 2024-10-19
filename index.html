@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/quiries.css" media="screen and (min-width:642px)">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/quiries.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <title>Document</title>
 </head>
+
 <body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
@@ -19,39 +22,49 @@
             <a href="#">Duvidas</a>
             <a href="#">Contatos</a>
         </nav>
+        <button id="botao">
+            <p>MARCAR CONSULTA</p>
+        </button>
     </header>
     <main>
         <h2>Teste de Flexbox</h2>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam architecto fuga odio consequuntur natus ullam deleniti voluptatem iusto. Praesentium nihil fuga perspiciatis dicta culpa molestiae expedita voluptate minima quae accusantium.
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam architecto fuga odio consequuntur natus
+            ullam deleniti voluptatem iusto. Praesentium nihil fuga perspiciatis dicta culpa molestiae expedita
+            voluptate minima quae accusantium.
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quidem impedit voluptatum, nostrum pariatur maiores vero quaerat obcaecati adipisci provident cupiditate perspiciatis repudiandae reprehenderit ullam, ab alias non quia necessitatibus.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quidem impedit voluptatum, nostrum pariatur
+            maiores vero quaerat obcaecati adipisci provident cupiditate perspiciatis repudiandae reprehenderit ullam,
+            ab alias non quia necessitatibus.
         </p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id delectus molestiae vero facilis eum error magnam consectetur praesentium, inventore hic deserunt sit consequatur iste minus, cumque tempora quibusdam, assumenda voluptates.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolor id deserunt, cumque quas culpa alias dolore laborum aliquam fugit! Ducimus libero ipsum ad impedit quidem soluta consequuntur, iste pariatur.
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id delectus molestiae vero facilis eum error magnam
+            consectetur praesentium, inventore hic deserunt sit consequatur iste minus, cumque tempora quibusdam,
+            assumenda voluptates.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolor id deserunt, cumque quas culpa alias
+            dolore laborum aliquam fugit! Ducimus libero ipsum ad impedit quidem soluta consequuntur, iste pariatur.
         </p>
     </main>
 
 
 
     <script>
-
-        function mudouTamanho(){
-            if (window.innerWidth >= 643) {
-                menu.style.display = 'flex'
-            } else {
+        function mudouTamanho() {
+            if (window.innerWidth < 643) {
                 menu.style.display = 'none'
+            } else {
+                menu.style.display = 'flex'
             }
         }
 
-  function clickMenu() {
-    const menu = document.getElementById('menu');
-    
-    if (menu.style.display === 'none' || menu.style.display === '') {
-        menu.style.display = 'flex';
-    } else {
-        menu.style.display = 'none';
-    }
-}
+        function clickMenu() {
+            const menu = document.getElementById('menu');
+
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
     </script>
 </body>
+
 </html>

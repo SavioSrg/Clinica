@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-:root{
+:root {
     --cor1: #DEEFE7;
     --cor2: #159A9C;
     --cor3: #FFFFFF;
@@ -9,13 +9,13 @@
 
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     background-color: var(--cor1);
@@ -23,9 +23,10 @@ body{
     width: 100vw;
 }
 
-header{
+header {
     background-color: var(--cor2);
-    color: var(--cor3); /* Branco*/
+    color: var(--cor3);
+    /* Branco*/
     padding: 10px;
 
     display: flex;
@@ -34,27 +35,25 @@ header{
     align-items: center;
 }
 
-header > h1{
+header>h1 {
     flex: 0 0 50px;
-    text-shadow: 2px 2px 0px var(--cor45); /* Sombra */
+    text-shadow: 2px 2px 0px var(--cor45);
+    /* Sombra */
 }
 
-span#burguer{
+span#burguer {
     cursor: pointer;
 }
 
-span#burguer:hover{
-
-}
-
-header > nav{
+header>nav {
     display: none;
     flex-flow: column nowrap;
     justify-content: flex-end;
 }
 
 
-header > nav > a, span#burguer{
+header>nav>a,
+span#burguer {
     background-color: var(--cor4);
     color: var(--cor3);
     width: 90vw;
@@ -63,16 +62,21 @@ header > nav > a, span#burguer{
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
-header > nav > a:hover, span#burguer:hover{
+header>nav>a:hover,
+span#burguer:hover {
     background-color: var(--cor3);
     color: var(--cor4);
     transition: background-color .5s;
 }
 
-main{
+button#botao {
+    display: none;
+}
+
+main {
     background-color: var(--cor3);
     margin: 10px;
     padding: 10px;
