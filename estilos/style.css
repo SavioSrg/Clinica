@@ -29,6 +29,7 @@ header {
     /* Branco*/
     padding: 10px;
 
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -82,4 +83,16 @@ main {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px var(--cor45);
+}
+
+section{
+    min-height: 500px;
+    padding: 10px;
+    border: 2px dotted var(--cor4);
+}
+
+footer{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    padding: 10px;
 }
