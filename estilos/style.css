@@ -75,7 +75,9 @@ button#botao {
 
 main {
     background-color: var(--cor3);
-    margin: 10px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px var(--cor45);
