@@ -3,8 +3,7 @@
 
 @media screen and (min-width: 643px) and (max-width: 1024px) {
 
-    header,
-    header>nav {
+    header, header>nav {
         display: flex;
         flex-flow: row wrap;
     }
@@ -24,10 +23,12 @@
 
 @media screen and (min-width: 1025px) {
     header {
+        display: flex;
         flex-flow: row wrap;
     }
 
     header>nav {
+        display: flex;
         flex-flow: row nowrap;
         flex: auto;
         justify-content: center;
